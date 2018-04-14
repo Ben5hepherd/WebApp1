@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <script type="text/javascript">
+        var rootPath = '@Url.Content("~/")'
+    </script>
+
+</head>
+<body>
+
+
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/scripts")
+</body>
+</html>
